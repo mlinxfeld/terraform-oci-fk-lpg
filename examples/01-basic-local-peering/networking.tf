@@ -147,7 +147,7 @@ module "vcn2" {
 }
 
 module "lpg" {
-  source = "../.."
+  source = "git::https://github.com/mlinxfeld/terraform-oci-fk-lpg.git?ref=v0.1.0"
 
   compartment_ocid_1 = var.compartment_ocid
   vcn_1_id           = module.vcn1.vcn_id
